@@ -8,7 +8,7 @@ x = eval(input('Please input function x(n): '))
 for z in range(200):
     if y[z] == 0:
         y[z] = -1.5*x[z] + 2*x[z + 1] - 0.5*x[z + 2]
-    elif y[z] > 0 and y[z] < 199:
+    elif y[z] > 0 and y[z] <= 198:
         y[z] = 0.5*x[z + 1] - 0.5*x[z - 1]
     elif y[z] == 199:
         y[z] = 1.5*x[z] - 2*x[z - 1] + 0.5*x[z - 2]
